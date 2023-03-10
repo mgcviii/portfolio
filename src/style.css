@@ -2,3 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.cdnfonts.com/css/argentum-sans?styles=28995,28991');
+
+@layer base {
+    @font-face {
+        font-family: 'otr';
+        font-style: normal;
+        font-weight: 100 200;
+        font-display: swap;
+        src: url("/fonts/OTRtype-Regular.woff") format('woff');
+        src: url("/fonts/OTRtype-Regular.woff2") format('woff2');
+        src: url("/fonts/OTRtypeGX.ttf");
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Font styling */
+
+#headertext { 
+    font-size: 0.625rem ;
+    font-variation-settings: 'wght' 130;
+}
+
+#herosubtitle { font-size: 0.750rem;}
+
+h1 {
+    text-align: justify;
+}
+
+.herotitlebig {
+    font-size: 3rem;
+    font-variation-settings: 'wght' 105;
+}
+
+#herotitle-atthew {
+    font-size: 2rem ;
+    font-variation-settings: 'wght' 135;
+}
+
+#herotitle-erson {
+    font-size: 2rem ;
+    font-variation-settings: 'wght' 153;
+}
+
+#herotitle-astro {
+    font-size: 2rem ;
+    font-variation-settings: 'wght' 153;
+}
+
+#herotitle-ivar {
+    font-size: 2rem ;
+    font-variation-settings: 'wght' 180;
+}
+
+#v-spacing{
+    letter-spacing: -0.700rem;
+}
+
+  
