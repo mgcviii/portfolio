@@ -7,42 +7,186 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MGCV</title>
   <link href="https://fonts.cdnfonts.com/css/argentum-sans?styles=28995,28991" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
 
 </head>
 
-<body class="bg-graphite min-w-full">
-  <div class="grid grid-cols-4 mx-2.5 gap-5"></div>
-  <main class="relative mx-2.5  my-1">
-    <header class="">
-      <h4 id="headertext" class="font-otr text-beige">MGCV</h4>
-    </header>
+<body class="bg-graphite min-w-full overflow-hidden ">
+  <!-- Grid Guides -->
+  <!-- mobile & tablet -->
+  <div class="grid grid-cols-4 mx-2.5 gap-5 lg:hidden"></div>
+  <!-- Desktop -->
+  <div class="hidden lg:grid grid-cols-12 mx-2.5 gap-5"></div>
+
+  <div class="preloader fixed overflow-hidden">
+    <div class="box1 col animate"></div>
+    <div class="box1 col animate"></div>
+    <div class="box1 col animate"></div>
+    <div class="box1 col animate"></div>
+    <div class="box1 col animate"></div>
+    <div class="box1 col animate"></div>
+    <div class="box1 col animate">
+      <h1 class="font-otr text-center self-center disappear welcome">WELCOME</h1>
+    </div>
+    <div class="box1 col animate"></div>
+    <div class="box1 col animate"></div>
+    <div class="box1 col animate"></div>
+    <div class="box1 col animate"></div>
+    <div class="box1 col animate"></div>
+    <div class="box1 col animate"></div>
+  </div>
+
+  <header class=" relative mx-2.5 my-1 lg:mx-10 xl:mx-12 2xl:mx-20">
+    <h4 id="headertext" class="font-otr text-beige">MGCV</h4>
+  </header>
+
+
+  <main class="relative mx-2.5 my-1 lg:mx-10 xl:mx-12 2xl:mx-20">
 
     <!-- For Tablet and Mobile -->
-    <section class="relative h-[97vh] flex flex-col justify-center items-center">
+    <section id="hero" class="relative h-[95vh] flex flex-col justify-center items-center ">
 
-      <div class="flex justify-center items-center h-1/2">
-        <h1 id="" class="font-otr text-beige text-center justify-center items-center flex-1">
-          <span class="herotitlebig">M</span><span id="herotitle-atthew">ATTHEW</span>
-          <span class="herotitlebig">G</span><span id="herotitle-erson">ERSON</span>
-          <span class="herotitlebig">C</span><span id="herotitle-astro">ASTRO</SPAN>
-          <span class="herotitlebig">V</span><span id="herotitle-ivar">I<span id="v-spacing">V</span>AR</span>
+      <div id="heroh1" class="flex justify-center items-center h-1/2">
+        <h1 class="font-otr text-beige text-center justify-center items-center flex-1 expand">
+          <span class="herotitlebig ">M</span><span id="herotitle-atthew" class="">ATTHEW</span>
+          <span class="herotitlebig ">G</span><span id="herotitle-erson" class="">ERSON</span>
+          <span class="herotitlebig ">C</span><span id="herotitle-astro" class="">ASTRO</SPAN>
+          <span class="herotitlebig ">V</span><span id="herotitle-ivar" class="">I<span id="v-spacing"
+              class="">V</span>AR</span>
         </h1>
       </div>
 
-      <div class="absolute bottom-0 right-0">
-        <h4 id="herosubtitle" class="text-white text-right">MULTIMEDIA DESIGN STUDENT <span>/</span> <br>
+      <div class="absolute bottom-0 right-0 md:relative ">
+        <h4 id="herosubtitle" class="text-white text-right md:text-center">MULTIMEDIA DESIGN STUDENT <span>/</span> <br
+            class="md:hidden
+          ">
           ASPIRING DIGITAL DESINGER</h4>
       </div>
 
     </section>
 
-    <!-- For Desktop -->
-    <section class="hidden md:block">
+    <section id="about" class="h-screen grid grid-cols-1 lg:block">
+      <h2 class="text-beige font-otr my-10 lg:col-start-1 lg:col-span-2">ABOUT ME</h2>
+      <div class="aboutcontainer lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:items-center lg:mt-40 ">
 
+        <div id="aboutwrapper" class=" relative lg:col-start-2 lg:row-start-1 ">
+          <P class=" text-white py-5">Hi there! My name is Matthew (incase you haven't notice the big heading).
+          </P>
+          <p class=" text-white py-5 stP"> <span class="fadeout"> I am a 3rd semester</span> Multimedia Design student
+            at
+            KEA
+            <span class="fadeout"> (Copenhagen School of Design and Technology). My</span> goal <span class="fadeout">
+              is
+              to </span> become a digital designer <span class="fadeout">and</span> create visually appealing digital
+            solutions <span class="fadeout">with focus on</span> UI / UX <span class="fadeout"> and </span>
+            attention to detail.
+          </p>
+          <p class=" text-white py-5 "><span class="fadeout"> I have a </span><span>background in</span> marketing <span
+              class="fadeout">and worked as a </span> <span> marketing student
+              assistant</span> <span class="fadeout"> for a year. When away from my screen and keyboard, I enjoy playing
+              basketball or casting a fishing rod in the waters around Copenhagen.</span>
+          </p>
+        </div>
+
+        <div id="imagecontainer" class=" image-stack lg:col-start-1 lg:col-end-2 lg:row-start-1 relative flex">
+          <img src="/img/profilepic2.png" alt="" class="me">
+        </div>
+
+      </div>
     </section>
 
-    <section class="relative">
 
+    <section id="projectsnworks" class="h-screen grid grid-cols-1 items-center relative">
+      <article id="projectswrapper">
+        <h2 class="text-beige font-otr my-10">PROJECTS <SPAN class="font-argentum text-beige">/</SPAN> WORKS</h2>
+        <ul class="py-20 ">
+          <li class=" border-t-2 border-t-creater_brown py-5  ">
+            <button class="flex w-full justify-between items-center btnhover">
+              <h3 class="text-white">SMAKS</h3><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.3387 12.552L9.86266 24.028L7.97733 22.1427L19.452 10.6667H9.33866V8H24.0053V22.6667H21.3387V12.552Z"
+                  fill="#D1BF9B" />
+              </svg>
+            </button>
+          </li>
+          <li class="border-t-2 border-t-creater_brown py-5">
+            <button class="flex w-full justify-between items-center btnhover">
+              <h3 class="text-white">BALLIN</h3><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.3387 12.552L9.86266 24.028L7.97733 22.1427L19.452 10.6667H9.33866V8H24.0053V22.6667H21.3387V12.552Z"
+                  fill="#D1BF9B" />
+              </svg>
+            </button>
+          </li>
+          <li class=" border-t-2 border-t-creater_brown py-5">
+            <button class="flex w-full justify-between items-center btnhover">
+              <h3 class="text-white">CC</h3><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.3387 12.552L9.86266 24.028L7.97733 22.1427L19.452 10.6667H9.33866V8H24.0053V22.6667H21.3387V12.552Z"
+                  fill="#D1BF9B" />
+              </svg>
+            </button>
+          </li>
+          <li class=" border-t-2 border-t-creater_brown py-5   ">
+            <button class="flex w-full justify-between items-center btnhover">
+              <h3 class="text-white">WALFI</h3><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.3387 12.552L9.86266 24.028L7.97733 22.1427L19.452 10.6667H9.33866V8H24.0053V22.6667H21.3387V12.552Z"
+                  fill="#D1BF9B" />
+              </svg>
+            </button>
+          </li>
+          <li class=" border-t-2 border-t-creater_brown py-5">
+            <button class="flex w-full justify-between items-center btnhover">
+              <h3 class="text-white">WEBFEATURE</h3><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.3387 12.552L9.86266 24.028L7.97733 22.1427L19.452 10.6667H9.33866V8H24.0053V22.6667H21.3387V12.552Z"
+                  fill="#D1BF9B" />
+              </svg>
+            </button>
+          </li>
+          <li class=" border-y-2 border-y-creater_brown py-5 ">
+            <button class="flex w-full justify-between items-center btnhover">
+              <h3 class="text-white">GAMEBOKS</h3><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.3387 12.552L9.86266 24.028L7.97733 22.1427L19.452 10.6667H9.33866V8H24.0053V22.6667H21.3387V12.552Z"
+                  fill="#D1BF9B" />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <aside id="overlayscontainer" class="-mx-2.5 -my-1 grid grid-flow-row lg:-mx-10 xl:-mx-12 2xl:-mx-20">
+
+      <div id="smaksContent"
+        class="projectitemcontainer min-h-screen min-w-full bg-mocha p-2.5 lg:px-10 xl:px-12 2xl:px-20">
+        <button class="closeoverlayButton font-argentum text-white underline ">CLOSE</button>
+        <picture>
+          <img src="/img/xd.adobe.com_view_22669149-83e0-423c-9d99-e56dd22554f1-7735__fullscreen.png" alt="">
+        </picture>
+        <div class="flex flex-row justify-between items-center">
+          <h2>SMAKS</h2>
+          <div><a role="button" href="#" class="projectlinkButton bg-creater_brown inline-block"><img
+                src="/img/linkicon.svg" alt=""></a></div>
+        </div>
+        <p>A prototype project of a simplified online t-shirt store catered to the younger target audience. The design
+          in simple and clean with focus on simple yet enjoyable user experience. The prototype was created in Adobe
+          XD.</p>
+        <p>Adobe XD | PHOTOSHOP | PAPER PROTOTYPING </p>
+      </div>
+
+    </aside>
+
+    <section id="skills" class="relative">
     </section>
   </main>
 

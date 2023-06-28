@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.cdnfonts.com/css/argentum-sans?styles=28995,28991');
+@import url('https://fonts.cdnfonts.com/css/argentum-sans?styles=28995,28998,28988');
 
 @layer base {
     @font-face {
@@ -14,6 +14,21 @@
         src: url("/fonts/OTRtype-Regular.woff2") format('woff2');
         src: url("/fonts/OTRtypeGX.ttf");
     }
+
+    @font-face {
+        font-family: 'Argentum Sans', sans-serif;
+        font-weight: 250 275 400;
+        src: url('https://fonts.cdnfonts.com/css/argentum-sans?styles=28995,28998,28988');
+    }
+}
+
+:root {
+    --white: #F5F5F5;
+    --beige: #D1BF9B;
+    --mocha: #948C7F;
+    --graphite: #31302C;
+    --creater_brown: #47443D;
+
 }
 
 * {
@@ -22,46 +37,307 @@
     padding: 0%;
 }
 
+
 /* Font styling */
 
-#headertext { 
-    font-size: 0.625rem ;
-    font-variation-settings: 'wght' 130;
+#headertext {
+    font-size: 0.625rem;
+    font-variation-settings: 'wght'130;
 }
 
-#herosubtitle { font-size: 0.750rem;}
-
-h1 {
-    text-align: justify;
+#herosubtitle {
+    font-size: 0.750rem;
 }
+
 
 .herotitlebig {
     font-size: 3rem;
-    font-variation-settings: 'wght' 105;
+    font-variation-settings: 'wght'105;
 }
 
 #herotitle-atthew {
-    font-size: 2rem ;
-    font-variation-settings: 'wght' 135;
+    font-size: 2rem;
+    font-variation-settings: 'wght'135;
 }
 
 #herotitle-erson {
-    font-size: 2rem ;
-    font-variation-settings: 'wght' 153;
+    font-size: 2rem;
+    font-variation-settings: 'wght'153;
 }
 
 #herotitle-astro {
-    font-size: 2rem ;
-    font-variation-settings: 'wght' 153;
+    font-size: 2rem;
+    font-variation-settings: 'wght'153;
 }
 
 #herotitle-ivar {
-    font-size: 2rem ;
-    font-variation-settings: 'wght' 180;
+    font-size: 2rem;
+    font-variation-settings: 'wght'180;
 }
 
-#v-spacing{
+#v-spacing {
     letter-spacing: -0.700rem;
 }
 
-  
+#heroh1 {
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+.welcome {
+    font-variation-settings: 'wght'150;
+    letter-spacing: 0.1rem;
+}
+
+h2 {
+    font-family: 'otr';
+    font-variation-settings: 'wght'105;
+    font-size: 1.250rem;
+
+}
+
+h3 {
+    font-family: 'otr';
+    font-variation-settings: 'wght'105;
+    font-size: 1.5rem;
+    letter-spacing: 0.075rem;
+}
+
+p {
+    font-family: 'Argentum Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 250;
+    line-height: 1.75rem;
+    letter-spacing: 0.030rem;
+}
+
+
+
+/* Preloader */
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+
+.col {
+    flex-grow: 2;
+    width: 100%;
+    z-index: 1;
+    height: 1%;
+    border: none !important;
+
+}
+
+.box1 {
+    background: var(--beige);
+}
+
+img.me {
+    max-width: 50%;
+    margin: auto;
+
+}
+
+.projectitemcontainer {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.closeoverlayButton {
+    justify-self: right;
+
+}
+
+.projectlinkButton {
+    border-radius: 17px;
+    padding: 4px 28px;
+    background-color: var(--creater_brown);
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    #headertext {
+        font-size: 1.250rem;
+        font-variation-settings: 'wght'130;
+    }
+
+    #herosubtitle {
+        font-size: 1.15rem;
+    }
+
+
+    .herotitlebig {
+        font-size: 4rem;
+        font-variation-settings: 'wght'105;
+    }
+
+    #herotitle-atthew {
+        font-size: 2.5rem;
+        font-variation-settings: 'wght'135;
+    }
+
+    #herotitle-erson {
+        font-size: 2.5rem;
+        font-variation-settings: 'wght'153;
+    }
+
+    #herotitle-astro {
+        font-size: 2.5rem;
+        font-variation-settings: 'wght'153;
+    }
+
+    #herotitle-ivar {
+        font-size: 2.5rem;
+        font-variation-settings: 'wght'180;
+    }
+
+    #v-spacing {
+        letter-spacing: -0.700rem;
+    }
+
+    #heroh1 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btnhover:hover h3 {
+        font-variation-settings: 'wght'150;
+        color: #D1BF9B;
+        /* transition: cubic-bezier(.35, .6, .89, .44); */
+        transition-duration: 0.75s, 0.75s;
+    }
+
+    #aboutwrapper>p {
+        font-size: 1.25rem;
+        line-height: 175%;
+    }
+
+    h1.expand:hover {
+        font-variation-settings: 'wght'200;
+        transition-duration: 0.75s, 0.75s;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    #headertext {
+        font-size: 1.250rem;
+        font-variation-settings: 'wght'130;
+    }
+
+    #herosubtitle {
+        font-size: 1.25rem;
+
+    }
+
+
+    .herotitlebig {
+        font-size: 5rem;
+        font-variation-settings: 'wght'105;
+    }
+
+    #herotitle-atthew {
+        font-size: 3rem;
+        font-variation-settings: 'wght'135;
+    }
+
+    #herotitle-erson {
+        font-size: 3rem;
+        font-variation-settings: 'wght'153;
+    }
+
+    #herotitle-astro {
+        font-size: 3rem;
+        font-variation-settings: 'wght'153;
+    }
+
+    #herotitle-ivar {
+        font-size: 3rem;
+        font-variation-settings: 'wght'180;
+    }
+
+    #v-spacing {
+        letter-spacing: -0.700rem;
+    }
+}
+
+
+
+@media (min-width: 1536px) {
+    #heroh1 {
+        margin-left: 17%;
+        margin-right: 17%;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    header,
+    #hero,
+    #about,
+    #projectsnworks,
+    #skills,
+    .projectitemcontainer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    #heroh1 {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .herotitlebig {
+        font-size: 5.5rem;
+        font-variation-settings: 'wght'105;
+    }
+
+    #herotitle-atthew {
+        font-size: 3.25rem;
+        font-variation-settings: 'wght'135;
+    }
+
+    #herotitle-erson {
+        font-size: 3.25rem;
+        font-variation-settings: 'wght'153;
+    }
+
+    #herotitle-astro {
+        font-size: 3.25rem;
+        font-variation-settings: 'wght'153;
+    }
+
+    #herotitle-ivar {
+        font-size: 3.25rem;
+        font-variation-settings: 'wght'180;
+    }
+
+
+    main>section#projectsnworks>aside#overlayscontainer {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+
+
+
+
+}
