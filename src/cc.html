@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/argentum-sans?styles=28995,28991" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>COPENHAGEN CARTEL</title>
+</head>
+
+<body>
+    <main class="relative mx-2.5 my-1 lg:mx-10 xl:mx-12 2xl:mx-20">
+        <section id="overlayscontainer" class=" -mx-2.5 -my-1 grid  grid-flow-row lg:-mx-10 xl:-mx-12 2xl:-mx-20 ">
+
+            <div id="smaksContent"
+                class="projectitemcontainer overlay min-h-screen min-w-full bg-lime_green p-2.5 lg:px-10 xl:px-12 2xl:px-20">
+                <a href="index.html?from=other#projectsnworks" id="backButton"
+                    class="closeoverlayButton font-argentum text-graphite stickyitem font-light lg:text-sm ">BACK TO
+                    PROJECTS</a>
+
+                <div class="relative imagecontainer rowgap5 top-margin ccbot-margin">
+                    <div class="justify-self-center">
+                        <video autoplay loop>
+                            <source src="img/CC/cclandingpage.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="justify-self-center video-container">
+                        <iframe src="https://www.youtube.com/embed/V3To7AuS2LE" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+                <div
+                    class="projectheader cc wcc flex flex-col justify-between gap-y-4 items-center lg:flex-col lg:items-start lg:self-end stickyitem">
+                    <h1 class="project-title fontsize1280 text-graphite ">COPENHAGEN CARTEL</h1>
+                    <div class="self-start">
+                        <a role="button" title="LINK TO THE PROTOTYPE"
+                            href="https://www.figma.com/proto/COlQXkRURQUVyRr5agwhdR/CC-Mobile-Prototype?page-id=0%3A1&type=design&node-id=20-223&viewport=623%2C402%2C0.13&t=SxjAK940klU0J92i-1&scaling=scale-down&starting-point-node-id=20%3A223&mode=design"
+                            target="_blank" class="projectlinkButton tooltip bg-creater_brown inline-block">
+                            <img class="buttonicon" src="img/linkicon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-item stickyitem wcc text-graphite">
+                    <p class="project-description">The collaborative project with the danish brand Copenhagen Cartel,
+                        had the goal of tapping into new demographic market. Our goal was to create a campaign concept
+                        that is aligned with the brand's core values while catering to the preferences of the younger
+                        target audience. The deliverables consisted of a social media video and a landing page for the
+                        campaign.
+                    </p>
+                    <p class="bold-text text-graphite">FIGMA | VIDEO | ADOBE PREMRIER PRO | UX / UI | CONTENT CREATION |
+                        CONCEPT
+                        DEVELOPMENT </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        var elements = document.querySelectorAll("#backButton, .imagecontainer, .projectheader, .grid-item");
+
+        elements.forEach(function (element) {
+            element.style.opacity = "0";
+            element.style.transform = "translateY(30px)";
+        });
+
+        var timeline = anime.timeline({
+            autoplay: false // Disable automatic animation
+        });
+
+        timeline
+            .add({
+                targets: elements,
+                opacity: [0, 1],
+                translateY: [30, 0],
+                duration: 1000,
+                easing: "easeOutQuad",
+
+            });
+
+        // Play the animation initially
+        timeline.play();
+
+        // Trigger fade-out animation when the user clicks on the <a> with #backButton ID
+        var backButton = document.getElementById("backButton");
+        backButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+
+            // Animate opacity to gradually decrease to 0
+            anime({
+                targets: elements,
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutQuad",
+                delay: anime.stagger(100),
+                complete: function () {
+                    // Navigate to the link
+                    window.location.href = backButton.href;
+                }
+            });
+        });
+    });
+</script>
+
+
+</body>
+
+</html>

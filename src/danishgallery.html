@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/argentum-sans?styles=28995,28991" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>DANISH GALLERY</title>
+</head>
+
+<body>
+    <main class="relative mx-2.5 my-1 lg:mx-10 xl:mx-12 2xl:mx-20">
+        <section id="overlayscontainer" class=" -mx-2.5 -my-1 grid  grid-flow-row lg:-mx-10 xl:-mx-12 2xl:-mx-20 ">
+
+            <div id="smaksContent"
+                class="projectitemcontainer overlay min-h-screen min-w-full bg-platinum_grey p-2.5 lg:px-10 xl:px-12 2xl:px-20">
+                <a href="index.html?from=other#projectsnworks" id="backButton"
+                    class="closeoverlayButton font-argentum text-lime_green stickyitem font-light lg:text-sm ">BACK TO
+                    PROJECTS</a>
+
+                <div class="relative imagecontainer rowgap5 top-margin bot-margin">
+                    <img class="projectimage dropshadow  " src="img/danishgallery/screenshot-1nbg.webp" alt="">
+                    <img class="projectimage dropshadow" src="img/danishgallery/screenshot-2nbg.webp" alt="">
+                    <img class="projectimage dropshadow" src="img/danishgallery/screenshot-3nbg.webp" alt="">
+                    <div id="mobileview-container" class="">
+                        <img class="projectimage" src="img/danishgallery/screenshot-4nbg.webp" alt="">
+                        <img class="projectimage" src="img/danishgallery/screenshot-5nbg.webp" alt="">
+                        <img class="projectimage" src="img/danishgallery/screenshot-6nbg.webp" alt="">
+                    </div>
+                </div>
+
+                <div
+                    class="projectheaderdg flex flex-col justify-between items-center gap-y-4 lg:gap-y-4 lg:flex-col lg:items-start lg:self-end stickyitem">
+                    <h1 class="project-title fontsize1280">DANISH GALLERY</h1>
+
+                    <div class="grid grid-cols-2 self-start gap-x-10">
+                        <a role="button" title="LINK TO THE PROTOTYPE"
+                            href="https://www.figma.com/proto/zIevWFUSnvAI4V60wc7CKl/Prototype_v2?page-id=0%3A1&type=design&node-id=1-2&viewport=712%2C579%2C0.45&t=R8uNx9PbJITTqHGc-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design"
+                            target="_blank" class="projectlinkButton tooltip bg-creater_brown inline-block">
+                            <!-- <img class="buttonicon" src="img/figmalog.svg" alt=""> -->
+                            <svg class="svgicon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
+                                style="enable-background:new 0 0 10 10;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: #D1BF9B;
+                                    }
+                                </style>
+                                <g>
+                                    <path class="st0"
+                                        d="M6.8,19.7c1.8,0,3.2-1.5,3.2-3.2v-3.2H6.8c-1.8,0-3.2,1.5-3.2,3.2S5,19.7,6.8,19.7z" />
+                                    <path class="st0"
+                                        d="M3.5,10c0-1.8,1.5-3.2,3.2-3.2H10v6.5H6.8C5,13.2,3.5,11.8,3.5,10z" />
+                                    <path class="st0"
+                                        d="M3.5,3.5c0-1.8,1.5-3.2,3.2-3.2H10v6.5H6.8C5,6.8,3.5,5.3,3.5,3.5z" />
+                                    <path class="st0" d="M10,0.3h3.2c1.8,0,3.2,1.5,3.2,3.2S15,6.8,13.2,6.8H10V0.3z" />
+                                    <path class="st0"
+                                        d="M16.5,10c0,1.8-1.5,3.2-3.2,3.2S10,11.8,10,10s1.5-3.2,3.2-3.2S16.5,8.2,16.5,10z" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a role="button" title="LINK TO THE LIVE SOLUTION"
+                            href="http://mgcv.dk/danish_gallery/index.html" target="_blank"
+                            class="projectlinkButton tooltip bg-creater_brown inline-block">
+                            <img class="buttonicon" src="img/linkicon.svg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="grid grid-item stickyitem">
+                    <p class="project-description">
+                        Exam project for the 3rd semester elective Digital Design, the aim of this project was to
+                        redesign an existing e-commerce website (Danish Gallery), using the various elements we learned
+                        through-out the elective. We created a solution that modernised the website and enhanced its
+                        alignment with customers and reinforce its brand identity.
+                    </p>
+                    <p class="bold-text">FIGMA | DESIGN SYSTEM | UX / UI | TAILWIND | DIGITAL DESIGN </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        var elements = document.querySelectorAll("#backButton, .imagecontainer, .projectheader, .grid-item");
+
+        elements.forEach(function (element) {
+            element.style.opacity = "0";
+            element.style.transform = "translateY(30px)";
+        });
+
+        var timeline = anime.timeline({
+            autoplay: false // Disable automatic animation
+        });
+
+        timeline
+            .add({
+                targets: elements,
+                opacity: [0, 1],
+                translateY: [30, 0],
+                duration: 1000,
+                easing: "easeOutQuad",
+
+            });
+
+        // Play the animation initially
+        timeline.play();
+
+        // Trigger fade-out animation when the user clicks on the <a> with #backButton ID
+        var backButton = document.getElementById("backButton");
+        backButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+
+            // Animate opacity to gradually decrease to 0
+            anime({
+                targets: elements,
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutQuad",
+                delay: anime.stagger(100),
+                complete: function () {
+                    // Navigate to the link
+                    window.location.href = backButton.href;
+                }
+            });
+        });
+    });
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/argentum-sans?styles=28995,28991" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>BALLIN</title>
+</head>
+
+<body>
+    <main class="relative mx-2.5 my-1 lg:mx-10 xl:mx-12 2xl:mx-20">
+        <section id="overlayscontainer" class=" -mx-2.5 -my-1 grid  grid-flow-row lg:-mx-10 xl:-mx-12 2xl:-mx-20 ">
+
+            <div id="smaksContent"
+                class="projectitemcontainer overlay min-h-screen min-w-full bg-platinum_grey p-2.5 lg:px-10 xl:px-12 2xl:px-20">
+                <a href="index.html?from=other#projectsnworks" id="backButton"
+                    class="closeoverlayButton font-argentum text-lime_green stickyitem font-light lg:text-sm ">BACK TO
+                    PROJECTS</a>
+
+                <div class="relative imagecontainer rowgap5 top-margin bot-margin">
+                    <img class="projectimage " src="img/ballin/ss1.webp" alt="">
+                    <img class="projectimage " src="img/ballin/ss2.webp" alt="">
+                    <img class="projectimage " src="img/ballin/ss3.webp" alt="">
+                    <img class="projectimage" src="img/ballin/ss4.webp" alt="">
+                    <img class="projectimage justify-self-center" src="img/ballin/ballin_logo.svg" alt=""
+                        style="max-width: 50%;">
+                </div>
+
+                <div
+                    class="projectheader headerballin flex flex-row justify-between items-center lg:flex-col lg:items-start lg:self-end stickyitem">
+                    <h1 class="project-title text-graphite">BALLIN</h1>
+                    <div>
+                        <a role="button" title="LINK TO THE WEBSITE" href="http://mgcv.dk/ballin/ballin_home.html"
+                            target="_blank" class="projectlinkButton tooltip bg-creater_brown inline-block">
+                            <img class="buttonicon" src="img/linkicon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-item stickyitem no-row-gap">
+                    <!-- <p class="project-description">This project's goal was to design and create a UX (user experience)
+                        friendly website with responsiveness - viewable for both desktop and mobile screens. It was also
+                        a requirement to create our own logo for the site. The project
+                        was based on our personal interest and has to follow a certain website design principle -
+                        amongst the 3 given choices i picked “minimalist style”. The topic of the website - the game of
+                        basketball. Name of the website - Ballin.
+                    </p> -->
+                    <p class="project-description text-graphite">The main objective of this project was to develop a
+                        user-friendly
+                        website with a responsive
+                        design, suitable for both desktop and mobile screens. Additionally, we were tasked with creating
+                        a unique logo for the site. Our individual interests guided the project, and we had to adhere to
+                        specific website design principles, with my chosen style being "minimalist." The website's theme
+                        revolved around basketball, and it was named "Ballin."
+                    </p>
+                    <p class="bold-text text-graphite">ADOBE XD | RESPONSIVE DESIGN | HTML | CSS | MINIMALIST</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        var elements = document.querySelectorAll("#backButton, .imagecontainer, .projectheader, .grid-item");
+
+        elements.forEach(function (element) {
+            element.style.opacity = "0";
+            element.style.transform = "translateY(30px)";
+        });
+
+        var timeline = anime.timeline({
+            autoplay: false // Disable automatic animation
+        });
+
+        timeline
+            .add({
+                targets: elements,
+                opacity: [0, 1],
+                translateY: [30, 0],
+                duration: 1000,
+                easing: "easeOutQuad",
+
+            });
+
+        // Play the animation initially
+        timeline.play();
+
+        // Trigger fade-out animation when the user clicks on the <a> with #backButton ID
+        var backButton = document.getElementById("backButton");
+        backButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+
+            // Animate opacity to gradually decrease to 0
+            anime({
+                targets: elements,
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutQuad",
+                delay: anime.stagger(100),
+                complete: function () {
+                    // Navigate to the link
+                    window.location.href = backButton.href;
+                }
+            });
+        });
+    });
+</script>
+
+
+</body>
+
+</html>
