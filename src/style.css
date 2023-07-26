@@ -331,11 +331,11 @@ iframe {
     color: var(--platinum_grey);
 }
 
-#copyspan{
+#copyspan {
     font-size: 1.25rem;
 }
 
-.footerlink{
+.footerlink {
     font-family: 'otr';
     font-variation-settings: 'wght'115;
     font-size: .95rem;
