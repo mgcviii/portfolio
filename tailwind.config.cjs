@@ -8,8 +8,7 @@ module.exports = {
     "./src/gameboks.html",
     "./src/smaks.html",
     "./src/danishgallery.html",
-    "./src/main.js",
-    "./src/style.css",
+    "./src/gb.html",
   ],
   theme: {
     colors: {

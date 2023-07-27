@@ -277,10 +277,30 @@ a.email {
     animation: slideLeft 30s linear infinite;
 }
 
-footer {
-    background-color: white;
+/* footer */
+
+.footertext {
+    font-family: 'otr';
+    font-variation-settings: 'wght'115;
+    font-size: .5rem;
+    color: var(--platinum_grey);
 }
 
+#copyspan {
+    font-size: 1.25rem;
+}
+
+.footerlink {
+    font-family: 'otr';
+    font-variation-settings: 'wght'115;
+    font-size: .75rem;
+    color: var(--lime_green);
+}
+
+#footerspan {
+    font-variation-settings: 'wght'100;
+    font-size: 0.5rem;
+}
 
 /* FOR SUBPAGES */
 
@@ -324,28 +344,7 @@ iframe {
     height: 180px;
 }
 
-.footertext {
-    font-family: 'otr';
-    font-variation-settings: 'wght'115;
-    font-size: .85rem;
-    color: var(--platinum_grey);
-}
 
-#copyspan {
-    font-size: 1.25rem;
-}
-
-.footerlink {
-    font-family: 'otr';
-    font-variation-settings: 'wght'115;
-    font-size: .95rem;
-    color: var(--lime_green);
-}
-
-#footerspan {
-    font-variation-settings: 'wght'100;
-    font-size: 0.65rem;
-}
 
 
 

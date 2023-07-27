@@ -13,8 +13,12 @@ export default defineConfig({
     outDir: resolve("dist"),
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "src/index.html"),
-        // about: resolve(__dirname, "src/about.html"),
+        // main: resolve(__dirname, "src/index.html"),
+        ballin: resolve(__dirname, "src/ballin.html"),
+        cc: resolve(__dirname, "src/cc.html"),
+        smaks: resolve(__dirname, "src/smaks.html"),
+        gb: resolve(__dirname, "src/gb.html"),
+        danishgallery: resolve(__dirname, "src/danishgallery.html"),
       },
     },
   },
