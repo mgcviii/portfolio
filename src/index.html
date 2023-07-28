@@ -44,14 +44,14 @@
   </script>
 </head>
 
-<body class="bg-graphite min-w-full overflow-hidden  ">
+<body class="bg-graphite max-w-full overflow-hidden ">
   <!-- Grid Guides -->
   <!-- mobile & tablet -->
   <div class="grid grid-cols-4 mx-2.5 gap-5 lg:hidden"></div>
   <!-- Desktop -->
   <div class="hidden lg:grid grid-cols-12 mx-2.5 gap-5"></div>
 
-  <div id="preloader" class="preloader fixed overflow-hidden">
+  <div id="preloader" class="preloader fixed overflow-hidden ">
     <div class="box1 col animate"></div>
     <div class="box1 col animate"></div>
     <div class="box1 col animate"></div>
@@ -74,14 +74,15 @@
   </header>
 
 
-  <main class="relative mx-2.5 my-1 lg:mx-10 xl:mx-12 2xl:mx-20  grid grid-flow-row gap-y-20">
+  <main class="relative   flex flex-col flex-grow-0 gap-y-20 overflow-x-clip">
 
     <!-- <header class="header">
       <h4 id="headertext" class="font-otr text-beige">MGCV</h4>
     </header> -->
 
     <!-- For Tablet and Mobile -->
-    <section id="hero" class="section relative h-[95vh] flex flex-col justify-center items-center ">
+    <section id="hero"
+      class="section relative h-[95vh] flex flex-col justify-center items-center mx-2.5 my-1 lg:mx-10 xl:mx-12 2xl:mx-20 ">
 
       <div id="heroh1" class="flex justify-center items-center h-1/2">
         <h1 id="mgcv" class="font-otr text-beige text-center justify-center items-center flex-1 expand">
@@ -102,7 +103,8 @@
 
     </section>
 
-    <section id="about" class="section h-[95vh] grid grid-cols-1 items-start relative">
+    <section id="about"
+      class="section h-[95vh] grid grid-cols-1 items-start relative mx-2.5 my-1 lg:mx-10 xl:mx-12 2xl:mx-20 ">
       <h2 class="text-beige font-otr my-10 lg:col-start-1 lg:col-span-2">ABOUT ME</h2>
       <div class="aboutcontainer py-20 lg:grid lg:grid-cols-2 lg:items-center">
 
@@ -133,14 +135,15 @@
     </section>
 
 
-    <section id="projectsnworks" class="section h-[95vh] grid grid-cols-1 items-center relative">
+    <section id="projectsnworks"
+      class="section h-[95vh] grid grid-cols-1 items-center relative overflow-x-clip mx-2.5 my-1 lg:mx-10 xl:mx-12 2xl:mx-20">
       <article id="projectswrapper">
         <h2 class="text-beige font-otr my-10">PROJECTS <SPAN class="font-argentum text-beige">/</SPAN> WORKS</h2>
         <ul class="py-20 ">
           <li class=" border-t-2 border-t-creater_brown py-5">
-            <a class="flex  justify-between items-center btnhover" href="/smaks.html">
-              <h3 class="text-white">SMAKS</h3><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+            <a class="grid grid-cols-2 items-center btnhover" href="/smaks.html">
+              <h3 class="text-white">SMAKS</h3><svg class="justify-self-end" width="32" height="32" viewBox="0 0 32 32"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M21.3387 12.552L9.86266 24.028L7.97733 22.1427L19.452 10.6667H9.33866V8H24.0053V22.6667H21.3387V12.552Z"
                   fill="#D1BF9B" />
@@ -148,9 +151,9 @@
             </a>
           </li>
           <li class="border-t-2 border-t-creater_brown py-5">
-            <a class="flex justify-between items-center btnhover" href="/ballin.html">
-              <h3 class="text-white">BALLIN</h3><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+            <a class="grid grid-cols-2 items-center btnhover" href="/ballin.html">
+              <h3 class="text-white">BALLIN</h3><svg class="justify-self-end" width="32" height="32" viewBox="0 0 32 32"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M21.3387 12.552L9.86266 24.028L7.97733 22.1427L19.452 10.6667H9.33866V8H24.0053V22.6667H21.3387V12.552Z"
                   fill="#D1BF9B" />
@@ -158,19 +161,19 @@
             </a>
           </li>
           <li class=" border-t-2 border-t-creater_brown py-5">
-            <a class="flex justify-between items-center btnhover" href="/cc.html">
-              <h3 class="text-white">COPENHAGEN CARTEL</h3><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+            <a class="grid grid-cols-2 items-center btnhover" href="/cc.html">
+              <h3 class="text-white">COPENHAGEN CARTEL</h3><svg class="justify-self-end" width="32" height="32"
+                viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M21.3387 12.552L9.86266 24.028L7.97733 22.1427L19.452 10.6667H9.33866V8H24.0053V22.6667H21.3387V12.552Z"
                   fill="#D1BF9B" />
               </svg>
             </a>
           </li>
-          <li class=" border-t-2 border-t-creater_brown py-5">
-            <a class="flex justify-between items-center btnhover" href="/danishgallery.html">
-              <h3 class="text-white">DANISH GALLERY</h3><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+          <li class=" border-t-2 border-t-creater_brown py-5 overflow-x-clip">
+            <a class="grid grid-cols-2 items-center btnhover overflow-x-clip" href="/danishgallery.html">
+              <h3 class="text-white">DANISH GALLERY</h3><svg class="justify-self-end" width="32" height="32"
+                viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M21.3387 12.552L9.86266 24.028L7.97733 22.1427L19.452 10.6667H9.33866V8H24.0053V22.6667H21.3387V12.552Z"
                   fill="#D1BF9B" />
@@ -178,9 +181,9 @@
             </a>
           </li>
           <li class=" border-y-2 border-y-creater_brown py-5 ">
-            <a class="flex justify-between items-center btnhover" href="/gb.html">
-              <h3 class="text-white">GAMEBOKS</h3><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+            <a class="grid grid-cols-2 items-center btnhover" href="/gb.html">
+              <h3 class="text-white">GAMEBOKS</h3><svg class="justify-self-end" width="32" height="32"
+                viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M21.3387 12.552L9.86266 24.028L7.97733 22.1427L19.452 10.6667H9.33866V8H24.0053V22.6667H21.3387V12.552Z"
                   fill="#D1BF9B" />
@@ -192,7 +195,8 @@
     </section>
 
 
-    <section id="skills" class="relative section h-[95vh] grid grid-cols-1 items-center">
+    <section id="skills"
+      class="relative section h-[95vh] grid grid-cols-1 items-center overflow-x-clip mx-2.5 my-1 lg:mx-10 xl:mx-12 2xl:mx-20 ">
 
       <div id="skills-container" class="">
         <h2 class="text-beige my-10">SKILLS</h2>
@@ -231,7 +235,7 @@
     </section>
 
     <section id="contact"
-      class="section relative h-[95vh] -mx-2.5 my-1 lg:-mx-10 xl:-mx-12 2xl:-mx-20 overflow-hidden ">
+      class="section relative h-[95vh] -mx-2.5 my-1 lg:-mx-10 xl:-mx-12 2xl:-mx-20  overflow-x-hidden">
       <div class="flex flex-col gap-[2vw] shrink-0 justify-center items-center text-center h-full">
         <div class="cursor-pointer">
           <ul id="#textBanner" class="text-banner text-[12vw] md:text-[10vw] flex justify-around shrink-0 gap-[2vw]">
@@ -258,22 +262,25 @@
         <h2 class="text-beige">GET IN TOUCH</h2>
       </div>
     </section>
-    <footer class=" relative py-5 block bg-graphite mx-0 my-1 lg:-mx-8 xl:-mx-10 2xl:-mx-12">
-      <div class="grid grid-flow-row gap-y-20 lg:grid-cols-2">
-        <p class="footerlink"><a href="https://www.linkedin.com/in/matthewgersonvivar/" target="_blank">LINKEDIN</a></p>
-        <div class="">
-          <p class=" footertext text-right lg:text-right"><span id="copyspan">©</span> 2023 MGCV</p>
-          <p class=" footertext text-right lg:text-right">
-            DESIGNED AND CODED BY ME
-            <br class=" lg:hidden">
-            <span id="footerspan">
-              ( WITH SOME HELP FROM CHAT GPT )
-            </span>
-          </p>
-        </div>
-      </div>
-    </footer>
+
+
   </main>
+  <footer class=" py-5  bg-graphite mx-6 ">
+    <div class="grid grid-flow-row gap-y-20 lg:grid-cols-2">
+      <p class="footerlink"><a href="https://www.linkedin.com/in/matthewgersonvivar/" target="_blank">LINKEDIN</a></p>
+      <div class="">
+        <p class=" footertext text-right lg:text-right"><span id="copyspan">©</span> 2023 MGCV</p>
+        <p class=" footertext text-right lg:text-right">
+          DESIGNED AND CODED BY ME
+          <br class=" lg:hidden">
+          <span id="footerspan">
+            ( WITH SOME HELP FROM CHAT GPT )
+          </span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
 
 
 
