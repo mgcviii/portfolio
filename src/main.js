@@ -16,7 +16,7 @@ anime({
 anime({
   targets: ".disappear",
   opacity: -1,
-  duration: 4000,
+  duration: 3000,
   delay: 2000,
   complete: function () {
     // Animation complete callback
@@ -26,7 +26,7 @@ anime({
 
 // Function to remove "overflow-hidden" class from body
 function removeOverflowHiddenClass() {
-  document.body.classList.remove("overflow-hidden");
+  document.body.classList.remove("overflow-hidden"); 
 }
 
 window.addEventListener("scroll", function () {
